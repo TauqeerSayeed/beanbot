@@ -1,1 +1,1 @@
-# beanbot
+# beanbot.github.io
