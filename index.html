@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web App</title>
+</head>
+<body>
+    <form method="POST" action="/">
+        <label for="url">Enter URL:</label>
+        <input type="text" name="url" id="url" required>
+        <br>
+        <input type="submit" name="submit_button" value="Submit">
+    </form>
+    <form method="POST" action="/open-channel">
+        <input type="hidden" name="url" value="{{ request.form.url }}">
+        <input type="submit" name="create_channel" value="Channel Created">
+    </form>
+</body>
+</html>
